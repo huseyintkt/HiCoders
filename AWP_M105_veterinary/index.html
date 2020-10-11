@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Module 105 - OOP - Veteriner Niyazi Gül</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">                    
+                    <!-- Veterinary Niyazi Start -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="./images/niyazi.jpg" class="card-img">
+                                </div>
+                                <div class="col-md-5">
+                                    <h5 class="card-title">Baytar Niyazi Bey</h5>
+                                    <p class="card-text">Hamsi ve Kedi Uzmanı.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info show-details" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Gunluk Rapor<i class="far fa-hand-point-down ml-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/anchovy.png">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Hamsi <span id="niyazi-anchovy" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/cat.png" alt="">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Kedi <span id="niyazi-cat" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/money.png" alt="">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Para <span id="niyazi-earned-money" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Veterinary Niyazi End -->
+                    <!-- Veterinary Yasemin Start -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="./images/yasemin.jpg" class="card-img">
+                                </div>
+                                <div class="col-md-5">
+                                    <h5 class="card-title">Baytar Yasemin Hanım</h5>
+                                    <p class="card-text">Karga Uzmanı.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info show-details" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Gunluk Rapor<i class="far fa-hand-point-down ml-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/crow.jpg">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Karga <span id="yasemin-crow" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/money.png" alt="">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Para <span id="yasemin-earned-money" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Veterinary Yasemin End -->
+                    <!-- Veterinary Cabbar Start -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="./images/cabbar.jpg" class="card-img">
+                                </div>
+                                <div class="col-md-5">
+                                    <h5 class="card-title">Baytar Cabbar Bey</h5>
+                                    <p class="card-text">Kedi Uzmanı.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info show-details" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        Gunluk Rapor<i class="far fa-hand-point-down ml-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/cat.png">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Kedi <span id="cabbar-cat" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/money.png" alt="">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Para <span id="cabbar-earned-money" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Veterinary Cabbar End -->
+                    <!-- Veterinary Eleni Start -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="./images/eleni.jpg" class="card-img">
+                                </div>
+                                <div class="col-md-5">
+                                    <h5 class="card-title">Baytar Eleni Hanım</h5>
+                                    <p class="card-text">Hamsi Uzmanı.</p>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-info show-details" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Gunluk Rapor<i class="far fa-hand-point-down ml-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./images/anchovy.png">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Hamsi <span id="eleni-anchovy" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./images/money.png" alt="">
+                                        <button type="button" class="btn btn-primary btn-block mt-2">
+                                            Para <span id="eleni-earned-money" class="badge badge-light">0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Veterinary Eleni End -->
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <!-- General Report Start -->
+                <div id="report" class="card text-center">
+                    <div class="card-header bg-info text-white">
+                        Genel Rapor
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Kazanilan toplam para
+                                <span id="totalEarnedMoney" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilen toplam hayvan sayisi
+                                <span id="NumberOfAnimalsExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilen kedi sayisi
+                                <span id="NumberOfCatsExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilen hamsi sayisi
+                                <span id="NumberOfAnchovysExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilen karga sayisi
+                                <span id="NumberOfCrowsExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilemeyen toplam hayvan sayisi
+                                <span id="NumberOfAnimalsNotExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilemeyen kedi sayisi
+                                <span id="NumberOfCatsNotExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilemeyen hamsi sayisi
+                                <span id="NumberOfAnchovysNotExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tedavi edilemeyen karga sayisi
+                                <span id="NumberOfCrowsNotExamined" class="badge badge-primary badge-pill">0</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- General Report End -->
+            </div>
+            <div class="col-md-1">
+                <!-- Timer Start-->
+                <div id="timer">
+                    <span></span>
+                </div>
+                <!-- Timer End-->
+            </div>
+        </div>
+    </main>
+
+    <!-- Fontawesome JS -->
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <!-- jQuery -->
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Faker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+    <!-- Timer JS -->
+    <script src="node_modules/timer.js/dist/timer.min.js"></script>
+    <!-- Config JS -->
+    <script src="./src/config.js"></script>
+    <!-- Models -->
+    <script src="src/Models/Cat.js"></script>
+    <script src="src/Models/Crow.js"></script>
+    <script src="src/Models/Anchovy.js"></script>
+    <script src="src/Models/Veterinary.js"></script>
+    <!-- Views -->
+    <script src="./src/Views/TimerView.js"></script>
+    <script src="./src/Views/ReportView.js"></script>
+    <!-- Controllers -->
+    <script src="src/Controllers/AnimalController.js"></script>
+    <script src="src/Controllers/VeterinaryController.js"></script>
+    <script src="src/Controllers/ManagerController.js"></script>
+    <!-- App JS -->
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

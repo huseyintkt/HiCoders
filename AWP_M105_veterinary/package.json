@@ -1,0 +1,19 @@
+{
+  "name": "AWP_M105_veteriner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Html", "Css", "JavaScript", "OOP"],
+  "author": "Huseyin Tekatli",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.4.1",
+    "faker": "^4.1.0",
+    "jquery": "^3.4.1",
+    "timer.js": "^1.0.4"
+  }
+}

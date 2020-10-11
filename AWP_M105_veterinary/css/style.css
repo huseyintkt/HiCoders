@@ -1,0 +1,42 @@
+
+body {
+    background-color: #dedddb;
+    min-height: 850px;
+}
+
+.accordion h5{
+    font-size: 18px;
+}
+
+.show-details {
+    margin-top: 5px;
+}
+
+.card-body img {
+    width: 100%;
+}
+
+.btn .badge {
+    padding: 6px 10px;
+}
+
+#timer{
+    border: 5px solid #f5a9a4;
+    display: inline-block;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #f5a9a4;
+    text-align: center;
+    line-height: 175px;
+}
+
+.badge-pill {
+    padding: 5px 20px;
+}
+
+.badge{
+    font-size: 18px;
+}
