@@ -1,0 +1,32 @@
+img {
+    max-width: 115px;
+}
+
+.p-info{
+    display: inline-block;
+    margin: 20px;
+}
+
+.box{
+    text-align: center;
+    box-shadow: 4px 3px 23px -4px rgba(0,0,0,0.58);
+    margin: 15px;
+    padding: 10px 48px;
+}
+
+.title{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.container{
+    background-color: aliceblue;
+    margin-bottom: 50px;
+    border-bottom: 5px solid cadetblue;
+}
+
+.personal{
+    float: left;
+}
