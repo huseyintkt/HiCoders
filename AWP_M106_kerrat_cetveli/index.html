@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 106 - Web API - Selami bey ve Homeschooling</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Add new child start -->
+                <div class="card mb-4">
+                    <div class="card-header text-white bg-info">
+                        Yeni Çocuk Ekle
+                    </div>
+                    <div class="card-body">
+                        <form class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <input id="nameValue" type="text" class="form-control" placeholder="İsim">
+                            </div>
+                            <button id="addBtn" type="button" class="btn btn-primary mb-2">Ekle</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Add new child end -->
+                <!-- List children start -->
+                <div id="people"></div>
+                <!-- List children end -->
+            </div>
+            <div class="col-md-8">
+                <!-- Working screen start -->
+                <div class="card text-center">
+                    <img src="./images/screen-image.jpg" class="card-img-top">
+                    <div class="card-header">
+                        Hadi bakalım
+                        <span id="activePerson" data-id=""></span>
+                        göreyim seni !!!
+                    </div>
+                    <div class="card-body">
+                        <h4 id="calculate">
+                            <span id="number1">_</span>
+                            <span>X</span>
+                            <span id="number2">_</span>
+                            <span>=</span>
+                            <input id="result" type="text">
+                        </h4>
+                        <button id="finishSession" class="btn btn-primary mt-4">Çalışmayı Sonlandır</button>
+                        <button id="nextAsk" class="btn btn-primary mt-4">Cevapla</button>
+                    </div>
+                </div>
+                <!-- Working screen end -->
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Faker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+    <!-- Models -->
+    <script src="./src/Models/Person.js"></script>
+    <!-- Views -->
+    <script src="./src/Views/DomView.js"></script>
+    <!-- Controllers -->
+    <script src="./src/Controllers/PersonController.js"></script>
+    <script src="./src/Controllers/WorkerController.js"></script>
+    <!-- App JS -->
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

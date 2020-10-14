@@ -1,0 +1,26 @@
+body{
+    background-image: url("../images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.badge-warning{
+    padding: 9px 28px;
+    font-size: 18px;
+}
+
+.startWorking{
+    float: right;
+}
+
+#calculate{
+    font-size: 130px;
+    color: yellowgreen;
+}
+
+#result{
+    width: 190px;
+    border: 5px solid yellowgreen;
+    color:yellowgreen;
+    padding: 15px;
+}
