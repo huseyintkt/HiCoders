@@ -1,0 +1,60 @@
+
+body {
+    background-image: url("../images/bg-img-1.jpg");
+}
+
+.card-body{
+    margin: auto;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.candy-img{
+    width: 100%;
+}
+
+.total-price{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.spinner-input {
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    float: left;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    color: gray;
+}
+ 
+.spinner-minus, .spinner-plus {
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    float: left;
+}
+ 
+.spinner-minus {
+    background-color: #E71426;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+ 
+.spinner-plus {
+    background-color: #13D008;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.hide{
+    display: none;
+}

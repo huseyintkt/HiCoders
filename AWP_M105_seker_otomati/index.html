@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 105 - OOP - Ferruh emminin sekerci dükkani</title>
+
+  <!-- Font-awesome CSS-->
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Style CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <main class="container mt-2">
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="row">
+          <!-- Yuvarlak Start -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/yuvarlak.jpg" class="card-img-top candy-img">
+              <div class="card-body text-center">
+                <h5 class="card-title">Yuvarlak (3 Chf)</h5>
+                <div>
+                  <button class="spinner-minus"><i class="fa fa-minus"></i></button>
+                  <input id="spinner-yuvarlak" class="spinner-input" type="text" value="0" readonly />
+                  <button class="spinner-plus"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Yuvarlak End -->
+          <!-- Burgulu Start -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/burgulu.jpg" class="card-img-top candy-img">
+              <div class="card-body text-center">
+                <h5 class="card-title">Burgulu (2.5 Chf)</h5>
+                <div>
+                  <button class="spinner-minus"><i class="fa fa-minus"></i></button>
+                  <input id="spinner-burgulu" class="spinner-input" type="text" value="0" readonly />
+                  <button class="spinner-plus"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Burgulu End -->
+          <!-- Jelibon Start -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/jelibon.jpg" class="card-img-top candy-img">
+              <div class="card-body text-center">
+                <h6 class="card-title">Jelibon (2.75 Chf)</h6>
+                <div>
+                  <button class="spinner-minus"><i class="fa fa-minus"></i></button>
+                  <input id="spinner-jelibon" class="spinner-input" type="text" value="0" readonly />
+                  <button class="spinner-plus"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Jelibon End -->
+          <!-- Akide Start -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/akide.jpg" class="card-img-top candy-img">
+              <div class="card-body text-center">
+                <h5 class="card-title">Akide (5 Chf)</h5>
+                <div>
+                  <button class="spinner-minus"><i class="fa fa-minus"></i></button>
+                  <input id="spinner-akide" class="spinner-input" type="text" value="0" readonly />
+                  <button class="spinner-plus"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Akide End -->
+          <!-- Lokum Start -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img src="./images/lokum.jpg" class="card-img-top candy-img">
+              <div class="card-body text-center">
+                <h5 class="card-title">Lokum (1.5 Chf)</h5>
+                <div>
+                  <button class="spinner-minus"><i class="fa fa-minus"></i></button>
+                  <input id="spinner-lokum" class="spinner-input" type="text" value="0" readonly />
+                  <button class="spinner-plus"><i class="fa fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Lokum End -->
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <!-- Total Price Start -->
+        <div class="row">
+          <button id="calculate-btn" class="btn btn-info btn-block mb-4">Toplam fiyati hesapla</button>
+          <h2 class="bg-info text-white total-price"><span id="total-price">___</span> Chf</h2>
+        </div>
+        <!-- Total Price End -->
+
+        <!-- Complete Payment Start -->
+        <div class="row mt-5">
+          <button id="complete-payment-btn" class="btn btn-success btn-block mb-4 hide">Odemeyi tamamla</button>
+        </div>
+        <!-- Complete Payment End -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Sweet Alert JS -->
+  <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <!-- Models -->
+  <script src="src/Models/Candy.js"></script>
+  <script src="src/Models/Box.js"></script>
+  <!-- Views -->
+  <script src="./src/Views/SpinnerView.js"></script>
+  <script src="src/Views/ManagerView.js"></script>
+  <!-- App JS -->
+  <script src="./src/app.js"></script>
+
+</body>
+
+</html>
