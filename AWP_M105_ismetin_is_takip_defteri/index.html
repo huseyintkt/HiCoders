@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 105 - OOP - Ismetin Is Takip Defteri</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row mb-5">
+                <!-- Customer start-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center bg-info text-white">
+                            Musteriler
+                        </div>
+                        <div class="card-body">
+                            <ul id="customers" class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Customer end-->
+                <!-- Order start-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center bg-info text-white">
+                            Musterinin Siparisleri
+                        </div>
+                        <div class="card-body">
+                            <ul id="orders" class="list-group"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Order end-->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Order details start-->
+                    <div class="card">
+                        <div class="card-header text-center bg-info text-white">
+                            Siparisin Adresleri
+                        </div>
+                        <div class="card-body">
+                            <ul id="addresses" class="list-group"></ul>
+                        </div>
+                    </div>
+                    <!-- Order details end-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Faker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+    <!-- Models -->
+    <script src="./src/model/Order.js"></script>
+    <script src="./src/model/Customer.js"></script>
+    <!-- Views -->
+    <script src="./src/view/_CustomerView.js"></script>
+    <script src="./src/view/_AddressView.js"></script>
+    <script src="./src/view/_OrderView.js"></script>
+    <!-- Controllers -->
+    <script src="./src/controller/InitializerController.js"></script>
+    <script src="./src/controller/CustomerController.js"></script>
+    <script src="./src/controller/OrderController.js"></script>
+    <script src="./src/controller/DBController.js"></script>
+    <!-- App JS -->
+    <script src="./src/app.js"></script>
+
+</body>
+
+</html>

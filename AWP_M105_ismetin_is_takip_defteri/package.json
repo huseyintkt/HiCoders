@@ -1,0 +1,16 @@
+{
+  "name": "AWP_M105_ismetin_is_takip_defteri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Html", "Css", "Bootstrap", "JavaScript", "OOP", "Node", "Npm"],
+  "author": "Huseyin TEKATLI",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "faker": "^4.1.0"
+  }
+}

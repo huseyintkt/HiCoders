@@ -1,0 +1,8 @@
+body{
+    background-color: #f5f5f5;
+}
+
+/* Teslim edilen siparisin ustunu cizmek icin kullanilacak */
+.delivered-order{
+    text-decoration: line-through;
+}

@@ -44,7 +44,7 @@ body{
         background-color: #82c5ed;
         position: absolute;
         right: 10px;
-        top: 490px;
+        top: 450px;
 
     }
     #bg-circle-4{
@@ -55,5 +55,71 @@ body{
         position: absolute;
         top: 290px;
         left: -70px;
+    }
+}
+
+/*****************
+PROFILE
+*****************/
+#profile{
+    width: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    #profil-header-bg{
+        height: 180px;
+        width: 100%;
+        background: rgb(59,142,247);
+        background: linear-gradient(90deg, #3585e8, #62baed);
+    }
+    #profile-header-content{
+        text-align: center;
+        #header-img-container{
+            position: relative;
+            top: -60px;
+            img{
+                width: 110px;
+            }
+            i{
+                position: absolute;
+                top: 75px;
+                right: 140px;
+                background-color: #33dab6;
+                color: white;
+                padding: 7px;
+                border-radius: 50%;
+                font-size: 12px;
+            }
+        }
+        #header-bottom{
+            width: 460px;
+            background-color: #fff;
+            margin: auto;
+            padding: 50px 0px 20px 0px;
+            h3, h4, p{
+                color: #808080;
+            }
+            h3{
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+            h4{
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 25px;
+            }
+            #profile-header-social{
+                margin: 10px 0px;
+                i{
+                    color: #808080;
+                    font-size: 18px;
+                    margin: 5px;
+                }
+            }
+        }        
     }
 }
