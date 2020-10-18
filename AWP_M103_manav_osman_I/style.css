@@ -1,0 +1,59 @@
+
+h1{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    border:1px solid black;
+    width: 48%;
+    min-height: 200px;
+    margin: 5px;
+}
+
+.flex-item p{
+    background-color: cadetblue;
+    color: #ffffff;
+    margin: 0px;
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fruits{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fruits li{
+    padding: 16px;
+    font-size: 18px;
+}
+
+.fruits li:hover{
+    cursor: pointer;
+    background-color: #79A7A8 !important;
+    color: #ffffff  !important;
+}
+
+.fruits li:nth-child(odd){
+    background-color: #f5f5f5;
+}
+
+.fruits li:nth-child(even){
+    background-color: #ffffff;
+}
+
+.fruits li .fa-angle-double-right{
+    float: right;
+    font-size: 24px;
+}
+
+.fruits li .fa-check-circle{
+    float: right;
+    font-size: 24px;
+}
