@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 105 - Data Model - Muhasebeci Leyla Hanim</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Module 105 - Data Model - Muhasebeci Leyla Hanim</h1>
+    <main>
+        <section id="formSection">
+            <form action="">
+                <div class="form-control">
+                    <label>İsim</label>
+                    <input id="firstName" type="text" placeholder="Lütfen ismi giriniz." required>
+                </div>
+                <div class="form-control">
+                    <label>Soyisim</label>
+                    <input id="lastName" type="text" placeholder="Lütfen soyismi giriniz." required>
+                </div>
+                <div class="form-control">
+                    <label>Kanton</label>
+                    <select id="canton"></select>
+                </div>
+                <div class="form-control">
+                    <button id="submit" type="button">Kaydet</button>
+                </div>
+            </form>
+        </section>
+        <section id="tableSection">
+            <div id="table-top">
+                <div id="tt-left">
+                    <label>Kişiler</label>
+                </div>
+                <div id="tt-right">
+                    <input id="filterText" type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>İsim
+                            <i id="sortFirstName" class="fas fa-sort"></i>
+                        </th>
+                        <th>Soyisim
+                            <i id="sortLastName" class="fas fa-sort"></i>
+                        </th>
+                        <th>Kanton
+                            <i id="sortCanton" class="fas fa-sort"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <!-- Kayitli kisiler burada listelenecek -->
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/4f41118937.js" crossorigin="anonymous"></script>
+    <script src="./model.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

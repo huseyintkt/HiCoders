@@ -1,0 +1,117 @@
+
+h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+}
+
+#formSection{
+    width:40%;
+    margin: 10px;
+    padding: 20px;
+}
+
+#tableSection{
+    border: 1px solid;
+    width: 60%;
+    margin: 10px;
+}
+
+.form-control{
+    margin-bottom: 15px;
+}
+
+.form-control input{
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.form-control select{
+    width: 94%;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.form-control button{
+    border: none;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 26px;
+    float: right;
+    margin-right: 30px;
+}
+
+.form-control button:hover{
+    cursor: pointer;
+}
+
+#table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#table td,th{
+    padding: 14px;
+}
+
+#table th{
+    border-right: 1px solid black;
+}
+
+#table thead tr{
+    background-color: #A6C543;
+    color: white;
+}
+
+#table thead .fa-sort{
+    float: right;
+}
+
+#table tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+#table-top{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#tt-left{
+    float: left;
+}
+
+#tt-left label{
+    font-size: 24px;
+}
+
+#tt-right{
+    float: right;
+    position: relative;
+}
+
+#tt-right input{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#tt-right .fa-search{
+    position: absolute;
+    top: 11px;
+    right: 8px;
+}
+
+#tt-right .fa-search:hover{
+    cursor: pointer;
+}
+
+#table .fas:hover{
+    cursor: pointer;
+}
