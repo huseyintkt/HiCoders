@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 105 - Data Model - Kelime Ögrenimi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="container">
+            <div id="top-bar">
+                <!-- Dogru sayisini yazdir-->
+                <p class="tb-info">Doğru : <span id="tb-info-true">0</span></p>
+                 <!-- Yanlis sayisini yazdir-->
+                <p class="tb-info">Yanlış : <span id="tb-info-false">0</span></p>
+            </div>
+            <div id="test">
+                <!-- Gosterilecek kelimeyi yazdir-->
+                <div id="word"></div>
+                <!-- Gosterilecek secenekleri yazdir-->
+                <div id="answers-container">
+                    <div class="answers"></div>
+                    <div class="answers"></div>
+                    <div class="answers"></div>
+                    <div class="answers"></div>
+                </div>
+            </div>
+            <div id="test-result" class="result">
+                <p class="tr-text">TEBRİKLER!</p>
+                <p class="tr-text">Oturumu tamamladınız.</p>
+                <!-- Oturum skorunu yazdir-->
+                <p class="tr-text">Skorunuz : <span id="tr-score">0</span></p>
+                <div id="tr-btn">
+                    <button id="start-test">Yeni Oturum</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="model.js"></script>
+    <script src="functions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
