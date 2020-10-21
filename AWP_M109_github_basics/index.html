@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Module 109 - Testing - Tools - Git-Github Basics</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <main class="container mt-5">
+        <h2>Git nedir? Neden kullanilir? Nasil kurulur?</h2>
+        <p>Git, acik kaynak kodlu bir versiyon kontrol sistemidir. Neden kullanildigini su sekilde ozetleyebiliriz:</p>
+        <ul>
+            <li>Yazmis oldugumuz projenin gelisim sureclerini izleyebiliriz.</li>
+            <li>Projede yapılan degisikliklerin nerede ve ne zaman yapildigini tespit edebiliriz.</li>
+            <li>Projede bir hata meydana geldiginde son stabil calisan versiyonuna geri donebiliriz.</li>
+            <li>Takim olarak calisilan projelerde hangi takim uyesinin hangi degisiklikleri yaptigini tespit edebiliriz.
+            </li>
+        </ul>
+        <p>Git kurulumu için sitesinden kurulum dosyasini <a href="https://git-scm.com/downloads" target="_blank">indirip</a> standart bir program kurulumu gibi bilgisayariniza kurabilirsiniz.</p>
+        <h2>Github nedir? Temel calisma akisi (Github flow) nasildir?</h2>
+        <p>İlk olarak biraz Git'ten bahsedelim. Git'te 3 bolum bulunur. Bunlar working directory, staging area ve local
+            repo'dur. Proje dosyalarimiz uzerinde bazi degisiklikler yaptiktan sonra dosyalarimizi ilk olarak git add
+            komutu ile staging area alanina kopyalariz. Burada yaptigimiz degisiklikleri inceledikten sonra herhangi bir
+            problem yoksa artik dosyalarimizi git commit komutu ile local repo'ya kopyalariz. Bu asamadan sonra ise git
+            push komutu ile local'deki repomuzu GitHup sunucularına gondeririz. Yine GitHub'ta bulunan repository'leride
+            local bilgisayarimiza pull edebiliriz.</p>
+        <h2>Temel Git Komutlari ve Aciklamalari</h2>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Git Komutu</th>
+                    <th>Aciklamasi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>git config --global user.name = "userName"</td>
+                    <td>Bu komut ile kullanici adimizi belirtiyoruz.</td>
+                </tr>
+                <tr>
+                    <td>git config --global email= "email"</td>
+                    <td>Bu komut ile mail adresimizi belirtiyoruz.</td>
+                </tr>
+                <tr>
+                    <td>git init</td>
+                    <td>Calişma klasorumuzun icerisinde local repomuzu olusturur. ".git" dosyasi eklenir. Bu dosya
+                        gorunmezse gizli klasorleri goster seceneğini aktif etmemiz gerekiyor.</td>
+                </tr>
+                <tr>
+                    <td>git status</td>
+                    <td>Calisma dosyalari ile Staging area alanindaki dosyalar arasindaki farklari gosterir.</td>
+                </tr>
+                <tr>
+                    <td>git add</td>
+                    <td>Tum dosyalari calisma alanindan staging area alanina kopyalar.</td>
+                </tr>
+                <tr>
+                    <td>git commit -m "Aciklama Bilgisi"</td>
+                    <td>Staging area'da bulunan dosyalari git'e kopyalar.</td>
+                </tr>
+                <tr>
+                    <td>git push</td>
+                    <td>Local repomuzu GitHub hesabimiza push eder.</td>
+                </tr>
+                <tr>
+                    <td>git show</td>
+                    <td>Son yaptigimiz commit'i gosterir.</td>
+                </tr>
+                <tr>
+                    <td>git log</td>
+                    <td>Yaptigimiz tum commit'leri gosterir.</td>
+                </tr>
+                <tr>
+                    <td>git branch branchName</td>
+                    <td>Yeni bir branch olusturur.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Bilgisayarda yeni bir repository olusturma ve Github'a yukleme adimlari</h2>
+        <ol>
+            <li>git init</li>
+            <li>git add .</li>
+            <li>git commit -m "Aciklama"</li>
+            <li>GitHub da bos bir repository olusturuyoruz</li>
+            <li>git remote add "GitHub Repository Name" "GitHub Repository Url"</li>
+            <li>git push -u "GitHub Repository Name" master</li>
+            <li>GitHub kullanici adi ve parola girilir</li>
+            <li>Bu asamadan sonra bilgisayardaki repo GitHub'a yuklenir</li>
+        </ol>
+        <h2>Github'da bulunan bir repository'i bilgisayara kaydetme ve yeni dosyalarla Github'a tekrar yukleme adimlari
+        </h2>
+        <ol>
+            <li>git clone "clone linki"</li>
+            <li>git add .</li>
+            <li>git commit -m "Aciklama"</li>
+            <li>git push</li>
+        </ol>
+    </main>
+</body>
+</html>
