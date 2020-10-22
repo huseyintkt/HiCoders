@@ -1,0 +1,15 @@
+{
+  "name": "math-4-operations",
+  "version": "0.0.6",
+  "description": "This package, performs 4 operations (addition, subtraction, division, multiplication) in mathematics.",
+  "main": "mathOperations.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "OOP",
+    "Math"
+  ],
+  "license": "MIT"
+}
