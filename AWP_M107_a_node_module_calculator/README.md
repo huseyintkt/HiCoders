@@ -1,6 +1,9 @@
 
 Sizlerden istegimiz, 4 islemi barindiran bir classi modul olarak yazmaniz ve NPM de bir hesap acarak publish etmeniz olacak.
 </hr>
+<h2>NPM Link</h2>
+https://www.npmjs.com/package/math-4-operations
+</hr>
 
 <h2>Welcome to math-4-operations 👋</h2>
 </hr>
