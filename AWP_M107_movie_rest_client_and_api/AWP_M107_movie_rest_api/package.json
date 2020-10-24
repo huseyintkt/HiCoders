@@ -1,0 +1,21 @@
+{
+  "name": "itclub-movie-api",
+  "version": "0.0.1",
+  "description": "An API fo searching, adding and deleting movies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "movie",
+    "api",
+    "rest"
+  ],
+  "author": "itclub oberland, <it-club-oberland@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
