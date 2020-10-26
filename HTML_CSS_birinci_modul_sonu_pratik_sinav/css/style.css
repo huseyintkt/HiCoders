@@ -1,10 +1,121 @@
 
 main{
+    font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(55deg, #2edae4 , #b289f7);
     height: 100vh;
     width: 100vw;
+    display: flex;
 }
 
 #login-container{
+    margin: auto;
+    padding: 90px 110px 60px 70px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
 
+#circle-left, #circle-right{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#circle-left{
+    left: -75px;
+    top: 295px;
+    background-image: linear-gradient(365deg, #2edae4 , #be63dd);
+}
+
+#circle-right{
+    right: -75px;
+    top: 30px;
+    background-image: linear-gradient(185deg, #be63dd, #2edae4);
+}
+
+#login-container h2{
+    color: #7dffff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+#login-container p{
+    font-size: 13px;
+    color: #808080;
+    margin-bottom: 45px;
+}
+
+.form-group{
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #e2dede;
+    margin-bottom: 20px;
+}
+
+.form-group.active{
+    border-bottom: 2px solid #7dffff;
+}
+
+.form-group i{
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    color: lightgray;
+}
+
+.form-group input{
+    border: none;
+    padding-left: 26px;
+    font-size: 13px;
+}
+
+.form-group input:focus{
+    outline: none;
+}
+
+#forget-password-container{
+    margin-bottom: 20px;
+}
+
+#forget-password-container a{
+    font-size: 13px;
+    color: #808080;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+#forget-password-container i{
+    color: #808080;
+    font-size: 10px;
+}
+
+#btn-submit{
+    width: 100%;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right, #bf64dd, #5e28fd);
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#btn-submit:hover{
+    cursor: pointer;
+}
+
+#sign-up-container a:first-child{
+    font-size: 13px;
+    color: #808080;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+#sign-up-container a:last-child{
+    font-size: 13px;
+    color: #3bf5f5;
+    text-decoration: none;
 }

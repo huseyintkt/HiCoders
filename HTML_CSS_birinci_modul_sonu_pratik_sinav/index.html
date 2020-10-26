@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML CSS Birinci Modul Sonu Pratik Sinavi</title>
+    <title>HTML CSS First Module End Practice Exam</title>
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
+        <!-- Login Start -->
         <section id="login-container">
-
+            <div id="circle-left"></div>
+            <div id="circle-right"></div>
+            <h2>Login</h2>
+            <p>Enter your details below to continue</p>
+            <div class="form-group active">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="E-mail Address">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="text" placeholder="Password">
+            </div>
+            <div id="forget-password-container">
+                <a href="#">Forgot Password</a>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <input id="btn-submit" type="submit" value="Login">
+            <div id="sign-up-container">
+                <a href="#">Don't have an account?</a>
+                <a href="#">Sign up here</a>
+            </div>
         </section>
+        <!-- Login End -->
     </main>
 </body>
 </html>
