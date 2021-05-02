@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hicoders-week07-api
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 3000
+  selector:
+    app: hicoders-week07-api
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hicoders-week07-api
+spec:
+  selector:
+    matchLabels:
+      app: hicoders-week07-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hicoders-week07-api
+    spec:
+      containers:
+      - name: hicoders-week07-api
+        image: registry.digitalocean.com/designbees/hicoders-week07-api
+        ports:
+        - containerPort: 3000

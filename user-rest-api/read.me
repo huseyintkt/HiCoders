@@ -1,0 +1,8 @@
+doctl registry login
+docker build -t hicoders-week07-api .
+docker tag hicoders-week07-api registry.digitalocean.com/designbees/hicoders-week07-api
+docker push registry.digitalocean.com/designbees/hicoders-week07-api
+
+kubectl apply -f hicoders_week07.yml
+
+kubectl apply -f hicoders-week07-ingress.yaml

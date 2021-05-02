@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: hicoders-week07-ingress
+spec:
+  rules:
+  - host: week7.design-bees.ch
+    http:
+      paths:
+      - backend:
+          serviceName: echo1
+          servicePort: 80

@@ -1,9 +1,10 @@
 const AMOUNT_OF_STOCK = 500;
 const LOWER_PRICE = 9;
 const UPPER_PRICE = 12;
-const LOCATION = "BE"
-const SEASON = "Winter"
+const LOCATION_BE = "BE"
+const SEASON_WINTER = "Winter"
 const UPPER_PRICE_FOR_EUROPE = 10
+const EUROPE_COUNTRIES = ["Norway","United Kingdom","Poland","France","Italy","GREECE","Spain"]
 
 /**
  * 1) Stok miktari 500 kg uzerinde olan baliklarin isimleri nelerdir?
@@ -20,13 +21,13 @@ printFishNames(listOfFishInPriceRange, "Fiyat araligi 9Fr. ile 12 Fr. arasinda o
 /**
  * 3) Sadece Bern'de ve kis sezonu satilan baliklar hangileridir?
  */
-const listOfFishesBySeasonAndLocation = getFishesBySeasonAndLocation(fishFarm, LOCATION, SEASON)
-printFishNames(listOfFishesBySeasonAndLocation, "Sadece Bern'de ve kis sezonu satilan baliklarin listesi :")
+const listOfFishBySeasonAndLocation = getFishesBySeasonAndLocation(fishFarm, LOCATION_BE, SEASON_WINTER)
+printFishNames(listOfFishBySeasonAndLocation, "Sadece Bern'de ve kis sezonu satilan baliklarin listesi :")
 
 /**
  * 5) Avrupa Birligi'nden (AB) gelen ve fiyati 10Fr dan dusuk olan baliklari alfabetik siraya gore siralayiniz.
  */
-const listOfFishFromEurope = getFishesFromEurope(fishFarm)
+const listOfFishFromEurope = getFishesFromEurope(fishFarm, EUROPE_COUNTRIES)
 const listOfFishesLessThanPrice = getFishesLessThanPrice(listOfFishFromEurope, UPPER_PRICE_FOR_EUROPE)
 printFishNames(listOfFishesLessThanPrice, "Avrupa Birligi'nden (AB) gelen ve fiyati 10Fr dan dusuk olan baliklarin alfabetik listesi :")
 
