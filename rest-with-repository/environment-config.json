@@ -1,0 +1,14 @@
+{
+    "HOST": "164.90.168.84",
+    "USER": "school_user",
+    "PASSWORD": "school_2021!",
+    "DB": "school_dev",
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "populationTimeOutInterval": 60000
+}
