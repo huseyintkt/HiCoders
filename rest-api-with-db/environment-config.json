@@ -1,0 +1,13 @@
+{
+    "HOST": "164.90.168.84",
+    "USER": "movie_user",
+    "PASSWORD": "movie_2021!",
+    "DB": "movie_dev",
+    "dialect": "mysql",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+}
